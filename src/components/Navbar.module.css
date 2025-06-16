@@ -1,0 +1,185 @@
+.navbar {
+  background-color: var(--navy-900);
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+}
+
+.navContent {
+  max-width: var(--container-max-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+ 
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.logoImage {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink {
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: var(--transition-all);
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: var(--green-400);
+}
+
+.loginLink {
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-all);
+}
+
+.loginLink:hover {
+  color: var(--green-400);
+}
+
+.getStartedButton {
+  background-color: var(--green-500);
+  color: var(--text-white);
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-all);
+}
+
+.getStartedButton:hover {
+  background-color: var(--green-600);
+  transform: translateY(-1px);
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.userAvatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userLetterAvatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: white;
+  font-size: 0.875rem;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: var(--green-500);
+}
+
+.userIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--text-white);
+}
+
+.userName {
+  color: var(--text-white);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .navContent {
+    padding: 0 1rem;
+  }
+
+  .navLinks {
+    gap: 1rem;
+  }
+
+  .logoText {
+    font-size: 1.25rem;
+  }
+
+  .logoImage {
+    width: 28px;
+    height: 28px;
+  }
+
+  .userName {
+    display: none;
+  }
+  
+  .userProfile {
+    padding: 0.25rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background: #111827;
+  }
+  
+  .navLink {
+    color: #9ca3af;
+  }
+  
+  .navLink:hover {
+    color: #f3f4f6;
+  }
+  
+  .loginLink {
+    color: #9ca3af;
+  }
+  
+  .loginLink:hover {
+    color: #f3f4f6;
+  }
+  
+  .getStartedButton {
+    color: #9ca3af;
+  }
+  
+  .getStartedButton:hover {
+    color: #f3f4f6;
+  }
+} 

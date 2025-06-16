@@ -1,0 +1,154 @@
+.privacyContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.iconWrapper {
+  width: 4rem;
+  height: 4rem;
+  background: var(--primary-100);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-600);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--navy-900);
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.introduction {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  margin-bottom: 1.5rem;
+}
+
+.sectionContent {
+  color: #64748b;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.contactSection {
+  background: var(--primary-50);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.link {
+  color: var(--primary-600);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--primary-700);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .privacyContainer {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .title,
+  .sectionTitle {
+    color: #f3f4f6;
+  }
+
+  .subtitle,
+  .introduction,
+  .sectionContent,
+  .paragraph {
+    color: #9ca3af;
+  }
+
+  .section {
+    background: #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  .contactSection {
+    background: rgba(var(--primary-rgb), 0.1);
+  }
+
+  .iconWrapper {
+    background: rgba(var(--primary-rgb), 0.1);
+  }
+
+  .icon {
+    color: var(--primary-400);
+  }
+
+  .link {
+    color: var(--primary-400);
+  }
+
+  .link:hover {
+    color: var(--primary-300);
+  }
+} 

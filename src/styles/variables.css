@@ -1,0 +1,35 @@
+:root {
+  /* Brand Colors */
+  --navy-900: #1a1f36;  /* Header background */
+  --green-900: #064e3b; /* Main background */
+  --green-800: #065f46;
+  --green-600: #059669;
+  --green-500: #10b981; /* Primary accent */
+  --green-400: #34d399;
+  --green-200: #a7f3d0;
+  --green-100: #d1fae5;
+  --green-50: #ecfdf5;
+
+  /* Text Colors */
+  --text-white: #ffffff;
+  --text-light: #f3f4f6;
+  --text-muted: #9ca3af;
+
+  /* Spacing */
+  --header-height: 4rem;
+  --container-max-width: 1440px;
+  --section-spacing: clamp(4rem, 10vw, 8rem);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* Transitions */
+  --transition-all: all 0.2s ease;
+} 

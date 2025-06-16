@@ -1,0 +1,227 @@
+.loginContainer {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%);
+  border-radius: 1rem;
+}
+
+.formWrapper {
+  max-width: 28rem;
+  width: 100%;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.logoContainer {
+  position: relative;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 0 auto;
+}
+
+.logoBackground {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  background: var(--primary-600);
+}
+
+.logoIcon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.logoIcon:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: #1a1f36;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  margin-top: 0.75rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  background: #f9fafb;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.1);
+}
+
+.rememberForgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkboxInput {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+}
+
+.forgotPassword {
+  color: var(--primary-600);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.forgotPassword:hover {
+  color: var(--primary-700);
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-600);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: var(--primary-700);
+  transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.buttonIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.authOptions {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.googleButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  color: #374151;
+  transition: var(--transition-all);
+  cursor: pointer;
+}
+
+.googleButton:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.googleButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.googleIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 1rem);
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  background-color: white;
+  padding: 0 0.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+  .formWrapper {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+} 

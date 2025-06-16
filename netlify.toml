@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Scheduled builds to check for new content
+[build.environment]
+  TZ = "UTC"
+
+# Run builds daily at midnight UTC to check for new content
+[functions]
+  directory = "netlify/functions"
+
+[[plugins]]
+  package = "@netlify/plugin-scheduled-builds"
+
+[plugins.inputs]
+  # Run every day at midnight UTC
+  schedule = "0 0 * * *" 

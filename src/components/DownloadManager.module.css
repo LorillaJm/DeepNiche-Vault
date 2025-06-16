@@ -1,0 +1,174 @@
+.downloadManager {
+  background: var(--color-gray-50);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.fileInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-md);
+}
+
+.fileDetails {
+  flex-grow: 1;
+}
+
+.fileName {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-xs);
+}
+
+.fileSize {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+
+.securityInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-primary-50);
+  border-radius: var(--radius-md);
+  color: var(--color-primary-700);
+  font-size: var(--font-size-sm);
+}
+
+.securityIcon {
+  width: var(--font-size-lg);
+  height: var(--font-size-lg);
+  color: var(--color-primary-500);
+}
+
+.error {
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-md);
+  color: #991b1b;
+  font-size: var(--font-size-sm);
+}
+
+.progressContainer {
+  margin-bottom: var(--space-md);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  height: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--color-primary-500);
+  transition: width 0.2s ease;
+}
+
+.progressText {
+  position: absolute;
+  right: var(--space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-700);
+}
+
+.downloadButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--color-primary-600);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.downloadButton:hover:not(:disabled) {
+  background: var(--color-primary-700);
+}
+
+.downloadButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.buttonIcon {
+  width: var(--font-size-lg);
+  height: var(--font-size-lg);
+}
+
+.expiryNote {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+  color: var(--color-gray-500);
+  font-size: var(--font-size-sm);
+}
+
+.clockIcon {
+  width: var(--font-size-base);
+  height: var(--font-size-base);
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  .downloadManager {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+  }
+
+  .fileName {
+    color: var(--text-primary);
+  }
+
+  .fileSize {
+    color: var(--text-secondary);
+  }
+
+  .securityInfo {
+    background: rgba(var(--color-primary-rgb), 0.1);
+    color: var(--color-primary-400);
+  }
+
+  .progressContainer {
+    background: var(--bg-tertiary);
+  }
+
+  .progressText {
+    color: var(--text-secondary);
+  }
+
+  .expiryNote {
+    color: var(--text-tertiary);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .fileInfo {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .securityInfo {
+    align-self: flex-start;
+  }
+} 

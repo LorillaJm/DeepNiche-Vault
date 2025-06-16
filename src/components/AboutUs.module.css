@@ -1,0 +1,171 @@
+.aboutContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--navy-900);
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  margin-bottom: 1.5rem;
+}
+
+.sectionText {
+  font-size: 1.125rem;
+  color: #64748b;
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+.valuesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.valueItem {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.valueItem h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy-900);
+  margin-bottom: 0.75rem;
+}
+
+.valueItem p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.teamMember {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.memberIcon {
+  width: 3rem;
+  height: 3rem;
+  background: var(--green-100);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--green-600);
+}
+
+.memberName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy-900);
+  margin-bottom: 0.5rem;
+}
+
+.memberRole {
+  font-size: 1rem;
+  color: var(--green-600);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.memberDescription {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .valuesList,
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .title,
+  .sectionTitle,
+  .valueItem h3,
+  .memberName {
+    color: #f3f4f6;
+  }
+
+  .subtitle,
+  .sectionText,
+  .valueItem p,
+  .memberDescription {
+    color: #9ca3af;
+  }
+
+  .valueItem,
+  .teamMember {
+    background: #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  .memberRole {
+    color: var(--green-400);
+  }
+
+  .memberIcon {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--green-400);
+  }
+} 
